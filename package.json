@@ -1,0 +1,22 @@
+{
+  "name": "hb",
+  "version": "0.1.0",
+  "description": "tools for build front-end project",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./bin/hb",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harvey-he/hb.git"
+  },
+  "author": "harvey-he",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Harvey-he/hb/issues"
+  },
+  "homepage": "https://github.com/Harvey-he/hb#readme",
+  "dependencies": {
+    "colors": "~1.0.3"
+  }
+}
