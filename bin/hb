@@ -1,3 +1,16 @@
 #!/usr/bin/env node
 
-console.log('hello world');
+var argv = require('optimist').argv;
+var log = console.log;
+
+if (argv.h || argv.help) {
+  log([
+    "usage: hb [options]",
+    "",
+    "options:",
+    "  -h --help          Print this list and exit."
+  ].join('\n'));
+  process.exit();
+} else {
+  log('**********hb**********');
+}
