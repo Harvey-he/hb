@@ -4,7 +4,11 @@
   "description": "tools for build front-end project",
   "main": "./lib/index.js",
   "scripts": {
-    "start": "node ./bin/hb",
+    "start": "node ./bin/hb"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "hb" : "bin/hb"
   },
   "repository": {
     "type": "git",
