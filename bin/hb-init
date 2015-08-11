@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+
+program
+  .option('-p, --package','Just add a package.json into your project.')
+  .on('--help', printHelp)
+  .parse(process.argv);
+
+
+function printHelp() {
+  log([
+    "  Examples:",
+    "",
+    "  $  hb init           Initialize a front-end project",
+    "  $  hb init -p        Add a package.json into your project"
+  ].join('\n'));
+  process.exit();
+}
