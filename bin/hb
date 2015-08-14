@@ -33,8 +33,7 @@ else if(subcmd === 'help'){
     program.emit('--help');
     process.exit(0);
   }
-  log(bin)
-  wrap(spawn(bin, ['--help'], {stdio: 'inherit'}));
+  wrap(spawn(bin, ['--help'], {stdio: 'inherit', customFds: [0, 1, 2]}));
 }
 // 若为command指令
 else{
@@ -66,7 +65,6 @@ function executable(subcmd) {
 }
 
 function wrap(sp) {
-  log(sp)
   sp.on('close', function(code) {
     process.exit(code);
   });
