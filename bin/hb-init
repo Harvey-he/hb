@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+var color = require('colorful').color;
+var fs = require('fs');
+var path = require('path');
 var program = require('commander');
 var log = console.log;
 

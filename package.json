@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Harvey-he/hb#readme",
   "dependencies": {
+    "colorful": "^2.1.0",
     "colors": "~1.0.3",
     "commander": "^2.8.1",
     "fs": "0.0.2",
